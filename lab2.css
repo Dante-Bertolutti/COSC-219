@@ -1,0 +1,54 @@
+html {
+    font-family: "Helvetica";
+    background-color: #333;
+    color: white;
+}
+header {
+    position: fixed;
+    top: 0;
+    background-color: #A9A9A9;
+    padding: 10px;
+    z-index: 1000;
+}
+li {
+    display: inline-block;
+    padding: 2px;
+}
+aside {
+    position: fixed;
+    top: 50px;
+    background-color: #A9A9A9;
+    border: 5px black;
+    padding: 20px;
+}
+h2 {
+    color: aquamarine;
+}
+img {
+    height: 150px;
+    width: 150px;
+}
+.highlight {
+    font-size: 20px;
+}
+#websites li {
+    list-style: square;
+}
+div.border {
+    border: 2px solid black;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    background-image: url("KelownaCampus.jpg");
+}
+main {
+    margin: 70px auto;
+    height: 500px;
+    margin: 10px auto;
+    
+}
+main div {
+    margin: 0 auto;
+}
+
