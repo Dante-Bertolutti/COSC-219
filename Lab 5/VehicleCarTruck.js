@@ -47,3 +47,19 @@ class Truck extends Vehicle {
         }
     }
 }
+
+function testVehicle() {
+    const car1 = new Car("Toyota", "Subaru", 2015, 10000, 20000, "gasoline");
+    const truck1 = new Truck("Ford", "Ranger", 2019, 80000, 40000, 10000);
+
+    car1.drive(2000);
+    car1.applyDiscount(0.30);
+    console.log(car1.getCarInfo());
+
+    truck1.drive(10000);
+    truck1.loadCargo(8000);
+    console.log(truck1.getTruckInfo());
+    truck1.loadCargo(3000);
+}
+
+testVehicle();
