@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<table id="nums">
+    <!--Header Row-->
+    <thead> 
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+    </thead>
+    <tr>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>25</td>
+        <td>35</td>
+    </tr>
+    <tr>
+        <td>40</td>
+        <td>50</td>
+        <td>60</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>10</td>
+        <td>15</td>
+    </tr>
+</table>
+<button id="highlightEvenButton">Highlight Even Rows</button>
+<button id="sumAllButton">Sum All Numbers</button>
+<button id="randomizeButton">Change First Column To Random Numbers</button>
+<button id="addRowButton">Add Random Row</button>
+<script>
+    document.getElementById('highlightEvenButton').addEventListener('click',() => {
+        const rows = document.querySelectorAll('#nums tbody tr');
+        for(var i = 1; i < rows.length; i+=2){
+            rows[i].style.backgroundColor = rows[i].style.backgroundColor = 'cyan';
+        }
+
+
+    })
+    
+    
+</script>
