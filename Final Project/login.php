@@ -16,5 +16,11 @@ if (!$conn) {
  
 }
 echo "Connected successfully";
+if(isset($_POST['username']) && isset($_POST['password'])){
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+}
+
+
 mysqli_close($conn);
 ?>
