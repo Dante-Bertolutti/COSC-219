@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $database = "u256863105_ocPlayerLogin";
-$username = "u256863105_dantebertolutt";
+$username = "u256863105_dantebertolutti";
 $password = "dBert7777";
  
 // Create connection
