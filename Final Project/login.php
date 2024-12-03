@@ -3,24 +3,18 @@ $servername = "localhost";
 $database = "u256863105_ocPlayerLogin";
 $username = "u256863105_dantebertolutt";
 $password = "dBert7777";
- 
-// Create connection
- 
+
 $conn = mysqli_connect($servername, $username, $password, $database);
- 
-// Check connection
- 
-if (!$conn) {
- 
-    die("Connection failed: " . mysqli_connect_error());
- 
-}
-echo "Connected successfully";
-if(isset($_POST['username']) && isset($_POST['password'])){
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-}
 
+$input_username = $_POST['username'];
+$input_password = $_POST['password'];
 
+$query = "SELECT * FROM users WHERE username = '$input_username' AND password = '$input_password'";
+$result = mysqli_query($conn, $query);
+
+$user = mysqli_fetch_assoc($result);
+$number = $user['number'];
+
+header("Location: playerpage.html?username=$input_username&number=$number");
 mysqli_close($conn);
 ?>
