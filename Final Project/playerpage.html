@@ -10,20 +10,41 @@
             crossorigin="anonymous"
         />
     </head>
-    <body class="bg-light d-flex align-items-center justify-content-center vh-100">
-        <div class="container text-center">
-            <!-- Username Display -->
-            <h1 id="username" class="display-4 text-dark fw-bold">Player</h1>
-            <!-- Stats Table -->
-            <div id="stats" class="mt-4">
-                <table class="table table-striped table-bordered">
-                    <thead>
-                        <tr id="table-head"></tr>
-                    </thead>
-                    <tbody>
-                        <tr id="table-body"></tr>
-                    </tbody>
-                </table>
+    <body class="bg-light vh-100 d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <!-- Username Display -->
+                    <h1 id="username" class="display-4 text-dark fw-bold mb-4">Player</h1>
+
+                    <!-- Stats Table -->
+                    <div id="stats" class="mb-5">
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr id="table-head"></tr>
+                            </thead>
+                            <tbody>
+                                <tr id="table-body"></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Embedded Play Creator in 2-wide format -->
+            <div class="row mt-4">
+                <div class="col-md-6 mb-4">
+                    <iframe allow="fullscreen" style="border:0; width:100%; height:500px;" title="Play Creator App" src='https://www.thehoopsgeek.com/react-apps/PlayCreator/embed/?code=dwz9k90VPO&showTitle=1&showVideo=1&showDescription=1&showPhaseDescriptions=1'></iframe>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <iframe allow="fullscreen" style="border:0; width:100%; height:500px;" title="Play Creator App" src='https://www.thehoopsgeek.com/react-apps/PlayCreator/embed/?code=N1s4ZMC1lL&showTitle=1&showVideo=1&showDescription=1&showPhaseDescriptions=1'></iframe>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <iframe allow="fullscreen" style="border:0; width:100%; height:500px;" title="Play Creator App" src='https://www.thehoopsgeek.com/react-apps/PlayCreator/embed/?code=KPvjHV0OfL&showTitle=1&showVideo=1&showDescription=1&showPhaseDescriptions=1'></iframe>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <iframe allow="fullscreen" style="border:0; width:100%; height:500px;" title="Play Creator App" src='https://www.thehoopsgeek.com/react-apps/PlayCreator/embed/?code=8KhYchEam6&showTitle=1&showVideo=1&showDescription=1&showPhaseDescriptions=1'></iframe>
+                </div>
             </div>
         </div>
         <script>
